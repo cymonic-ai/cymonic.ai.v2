@@ -13,7 +13,7 @@ const iconMap: Record<string,React.ReactNode> = {
 const Platform: React.FC = () => {
   const [expanded, setExpanded] = useState<string|null>(null);
   return (
-    <section id="platform" className="py-24 md:py-32 bg-white">
+    <section id="platform" className="py-24 md:py-32 bg-graphite">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader label="Platform Ecosystem" title="Architecting the Autonomous Enterprise"
           subtitle="Five purpose-built engines that work together to give your organisation complete agentic intelligence — from execution to oversight."/>

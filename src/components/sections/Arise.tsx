@@ -35,7 +35,7 @@ const Arise: React.FC = () => {
   const doubled = [...ARISE_VALUES, ...ARISE_VALUES];
 
   return (
-    <section id="values" className="py-24 md:py-32 bg-white overflow-hidden">
+    <section id="values" className="py-24 md:py-32 bg-graphite overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <SectionHeader
           label="Core Values"

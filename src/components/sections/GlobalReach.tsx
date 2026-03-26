@@ -15,13 +15,13 @@ const GlobalReach: React.FC = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-graphite overflow-hidden relative">
+    <section className="py-6 md:py-8 lg:py-10 bg-graphite overflow-hidden relative">
       <div className="absolute inset-0 hex-pattern opacity-50 pointer-events-none"/>
       {/* Responsive background blur */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 md:w-[400px] md:h-[250px] lg:w-[600px] lg:h-[300px] bg-emerald/5 rounded-full blur-3xl pointer-events-none"/>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-3 md:mb-4">
           <FadeUp>
             <span className="section-label justify-center">
               <span className="w-6 h-px bg-emerald inline-block"/>
@@ -29,7 +29,7 @@ const GlobalReach: React.FC = () => {
             </span>
           </FadeUp>
           <FadeUp delay={0.1}>
-            <h2 className="font-display text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3 md:mb-4">
+            <h2 className="font-display text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-1 mb-1 md:mb-2">
               One Engineering Base. <span className="text-emerald">Six Global Markets.</span>
             </h2>
           </FadeUp>
@@ -142,7 +142,7 @@ const GlobalReach: React.FC = () => {
 
         {/* Mobile-optimized legend */}
         <FadeUp delay={0.5}>
-          <div className="mt-8 md:mt-10 px-2 sm:px-0">
+          <div className="mt-3 md:mt-4 px-2 sm:px-0">
             {/* Mobile: Show as list, Desktop: Show as wrapped boxes */}
             <div className="hidden sm:flex flex-wrap justify-center gap-3 md:gap-4">
               {GLOBAL_CITIES.map((city) => (

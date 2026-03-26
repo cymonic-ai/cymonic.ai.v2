@@ -16,7 +16,7 @@ const fadeUp = (delay:number) => ({
 });
 
 const Capabilities: React.FC = () => (
-  <section id="capabilities" className="py-24 md:py-32 bg-white">
+  <section id="capabilities" className="py-24 md:py-32 bg-graphite">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeader
         label="Core Capabilities"

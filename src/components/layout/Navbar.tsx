@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav style={{ zIndex: 100 }}
-      className={`fixed top-0 left-0 right-0 transition-all duration-300 border-b border-white/8
+      className={`fixed top-0 left-0 right-0 transition-all duration-300
         ${scrolled ? 'bg-graphite shadow-lg shadow-black/30' : 'bg-graphite'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
 

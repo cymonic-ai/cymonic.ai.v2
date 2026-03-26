@@ -34,13 +34,48 @@ src/
 └── index.css                 # Tailwind + global styles
 ```
 
-## Brand
-- **Primary**: Forest Green `#0D2B2B`, Teal `#2DD4BF`
-- **Fonts**: Syne (headings) + DM Sans (body)
-- **Style**: Light & clean, white sections, dark forest hero
-
 ## Commands
 ```bash
 npm start     # Dev server
 npm run build # Production build
 ```
+
+## Deployment to GitHub Pages
+
+This project is deployed to GitHub Pages using GitHub Actions.
+
+### Deployment Workflow
+- **Repository Branch:** `main` (always push changes here)
+- **Deployment Branch:** `gh-pages` (auto-generated, managed by GitHub Actions)
+- **Live Site:** https://cymonic-ai.github.io/cymonic.ai.v2/
+- **Automatic Build:** GitHub Actions triggers on every push to `main`
+- **Deployment Time:** ~2-5 minutes after pushing
+
+### How to Deploy
+
+1. **Commit your changes:**
+   ```bash
+   git add .
+   git commit -m "Update: [describe your changes]"
+   ```
+
+2. **Push to main branch (important: NOT gh-pages):**
+   ```bash
+   git push origin main
+   ```
+
+3. **Verify deployment:**
+   - Check GitHub repository → **Actions** tab to see workflow status
+   - Workflow should show "Build and Deploy" running and then complete
+   - Once complete, visit https://cymonic-ai.github.io/cymonic.ai.v2/ to see live changes
+   - Changes typically appear within 2-5 minutes after push
+
+### GitHub Actions Configuration
+
+The repository uses `.github/workflows/deploy.yml` to:
+- Build the project with `npm run build`
+- Generate static files in the `build/` directory
+- Deploy to `gh-pages` branch automatically
+- Make changes available at the GitHub Pages URL
+
+**Note:** Always push to `main` branch only. GitHub Pages and GitHub Actions handle the `gh-pages` branch automatically — manual pushes to `gh-pages` are not needed.

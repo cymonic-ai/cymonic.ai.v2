@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cymonic.ai.v2/static/css/main.0bad9fd1.css",
-    "main.js": "/cymonic.ai.v2/static/js/main.348261b6.js",
+    "main.css": "/cymonic.ai.v2/static/css/main.2990de2e.css",
+    "main.js": "/cymonic.ai.v2/static/js/main.744cb484.js",
     "index.html": "/cymonic.ai.v2/index.html",
-    "main.0bad9fd1.css.map": "/cymonic.ai.v2/static/css/main.0bad9fd1.css.map",
-    "main.348261b6.js.map": "/cymonic.ai.v2/static/js/main.348261b6.js.map"
+    "main.2990de2e.css.map": "/cymonic.ai.v2/static/css/main.2990de2e.css.map",
+    "main.744cb484.js.map": "/cymonic.ai.v2/static/js/main.744cb484.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bad9fd1.css",
-    "static/js/main.348261b6.js"
+    "static/css/main.2990de2e.css",
+    "static/js/main.744cb484.js"
   ]
 }

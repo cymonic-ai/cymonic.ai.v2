@@ -5,11 +5,8 @@
 @tailwind utilities;
 
 @layer base {
-  html { scroll-behavior: smooth; overflow-x: hidden; overflow-y: scroll; }
-  html::-webkit-scrollbar { width: 5px; }
-  html::-webkit-scrollbar-track { background: #f9fafb; }
-  html::-webkit-scrollbar-thumb { background: #10B98166; border-radius: 3px; }
-  html::-webkit-scrollbar-thumb:hover { background: #10B981; }
+  html { scroll-behavior: smooth; overflow-x: hidden; overflow-y: scroll; scrollbar-width: none; -ms-overflow-style: none; }
+  html::-webkit-scrollbar { width: 0; height: 0; }
   body { font-family: 'Plus Jakarta Sans', sans-serif; color: #374151; -webkit-font-smoothing: antialiased; position: relative; }
   h1, h2, h3, h4, h5 { font-family: 'Manrope', sans-serif; }
   section { isolation: isolate; }

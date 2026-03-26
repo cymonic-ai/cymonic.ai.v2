@@ -220,19 +220,19 @@ export const TECH_PARTNERS = [
 ];
 
 export const GLOBAL_CITIES = [
-  { name: 'New York', x: 22, y: 36, hq: false },
-  { name: 'Toronto', x: 20, y: 32, hq: false },
-  { name: 'Dubai', x: 57, y: 42, hq: false },
-  { name: 'Kochi', x: 63, y: 50, hq: true },
-  { name: 'Singapore', x: 72, y: 55, hq: false },
-  { name: 'Sydney', x: 80, y: 70, hq: false },
+  { name: 'New York', x: 13, y: 18, hq: false },
+  { name: 'Toronto', x: 11, y: 15, hq: false },
+  { name: 'Dubai', x: 52, y: 30, hq: false },
+  { name: 'Kochi', x: 61, y: 37, hq: true },
+  { name: 'Singapore', x: 70, y: 44, hq: false },
+  { name: 'Sydney', x: 82, y: 62, hq: false },
 ];
 
-export const PRIDE_VALUES = [
+export const ARISE_VALUES = [
   {
-    letter: 'P',
-    value: 'Passion',
-    desc: 'Bring energy and commitment to everything you do — clients feel the difference.',
+    letter: 'A',
+    value: 'Accountability',
+    desc: 'Take ownership of your work. Stand behind your decisions and deliver results.',
   },
   {
     letter: 'R',
@@ -245,9 +245,9 @@ export const PRIDE_VALUES = [
     desc: 'Be honest — with clients, with your team, and with yourself.',
   },
   {
-    letter: 'D',
-    value: 'Discipline',
-    desc: 'Do the hard work others skip. Detail, precision, and follow-through every time.',
+    letter: 'S',
+    value: 'Solidarity',
+    desc: 'Stand together as one team. Support each other and lift each other up.',
   },
   {
     letter: 'E',

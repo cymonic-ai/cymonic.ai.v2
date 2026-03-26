@@ -30,17 +30,43 @@ const GlobalReach: React.FC = () => {
         </div>
         <FadeUp delay={0.3}>
           <div className="relative w-full max-w-4xl mx-auto">
-            <svg viewBox="0 0 1000 500" className="w-full opacity-20" fill="none">
-              <path d="M80 80L200 60L240 90L260 140L230 180L200 200L170 220L140 210L110 190L90 160L70 130Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.5"/>
-              <path d="M170 240L210 230L230 260L220 320L200 370L180 380L160 350L150 300L155 260Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.5"/>
-              <path d="M430 70L490 60L520 80L510 110L480 120L450 115L430 100Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.5"/>
-              <path d="M440 140L500 130L530 160L540 220L520 290L490 320L460 310L440 270L430 200L435 160Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.5"/>
-              <path d="M520 60L700 50L780 80L800 130L760 160L700 170L640 150L580 140L540 120L520 90Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.5"/>
-              <path d="M630 160L660 155L670 200L650 240L630 230L620 190Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.7"/>
-              <path d="M720 160L760 155L780 180L760 200L730 195Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.5"/>
-              <path d="M760 280L840 270L870 300L860 350L820 370L780 360L750 330L745 300Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.5"/>
-              {[100,200,300,400].map(y=><line key={y} x1="0" y1={y} x2="1000" y2={y} stroke="#10B981" strokeOpacity="0.04" strokeWidth="1"/>)}
-              {[200,400,600,800].map(x=><line key={x} x1={x} y1="0" x2={x} y2="500" stroke="#10B981" strokeOpacity="0.04" strokeWidth="1"/>)}
+            <svg viewBox="0 0 1000 550" className="w-full opacity-25" fill="none">
+              {/* North America */}
+              <path d="M50 80L100 70L120 100L140 130L130 160L110 170L80 150L60 110Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              {/* Central America & Caribbean */}
+              <path d="M120 180L135 185L140 200L130 210L120 205Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.4"/>
+              {/* South America */}
+              <path d="M110 220L140 210L155 240L160 290L150 340L130 360L100 340L95 280L105 240Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* Europe */}
+              <path d="M350 60L400 55L420 75L410 100L370 110L350 90Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              {/* Africa */}
+              <path d="M390 110L450 100L480 120L490 180L500 250L480 300L450 310L420 280L410 200L400 150L390 120Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* Middle East */}
+              <path d="M480 130L520 125L540 160L530 200L500 190L490 150Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* Russia & Central Asia */}
+              <path d="M480 70L600 60L650 80L660 120L620 130L550 110L500 100Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* South Asia */}
+              <path d="M590 160L630 155L650 180L640 210L610 220L595 200Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* Southeast Asia */}
+              <path d="M650 190L700 185L720 220L710 250L670 245L655 210Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* East Asia */}
+              <path d="M700 70L800 65L820 100L800 140L750 135L720 100Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* Australia */}
+              <path d="M780 280L820 275L840 310L820 340L780 335Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
+              
+              {/* New Zealand */}
+              <path d="M860 330L875 325L880 355L865 360Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.4"/>
+              
+              {/* Grid lines */}
+              {[100,150,200,250,300,350,400,450,500].map(y=><line key={`h${y}`} x1="0" y1={y} x2="1000" y2={y} stroke="#10B981" strokeOpacity="0.03" strokeWidth="1"/>)}
+              {[100,200,300,400,500,600,700,800,900].map(x=><line key={`v${x}`} x1={x} y1="0" x2={x} y2="550" stroke="#10B981" strokeOpacity="0.03" strokeWidth="1"/>)}
             </svg>
             <div className="absolute inset-0">
               {GLOBAL_CITIES.map((city,i) => (

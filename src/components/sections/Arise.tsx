@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeader } from '../ui/SectionHeader';
-import { PRIDE_VALUES } from '../../constants/content';
+import { ARISE_VALUES } from '../../constants/content';
 
-const Pride: React.FC = () => {
+const Arise: React.FC = () => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const posRef = useRef(0);
@@ -32,7 +32,7 @@ const Pride: React.FC = () => {
   }, [isPaused]);
 
   // Duplicate values for seamless loop
-  const doubled = [...PRIDE_VALUES, ...PRIDE_VALUES];
+  const doubled = [...ARISE_VALUES, ...ARISE_VALUES];
 
   return (
     <section id="values" className="py-24 md:py-32 bg-white overflow-hidden">
@@ -40,7 +40,7 @@ const Pride: React.FC = () => {
         <SectionHeader
           label="Core Values"
           title="What We Live By"
-          subtitle="PRIDE is not a word — it's the standard every Cymonic team member holds themselves to, every day."
+          subtitle="ARISE is not a word — it's the standard every Cymonic team member holds themselves to, every day."
         />
       </div>
 
@@ -86,7 +86,7 @@ const Pride: React.FC = () => {
         </div>
       </div>
 
-      {/* PRIDE acronym footer */}
+      {/* ARISE acronym footer */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ const Pride: React.FC = () => {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14"
       >
         <div className="flex items-center justify-center gap-1 md:gap-0">
-          {PRIDE_VALUES.map((item, i) => (
+          {ARISE_VALUES.map((item, i) => (
             <React.Fragment key={item.letter}>
               <div className="flex flex-col items-center px-4 md:px-8">
                 <span className="font-display text-4xl md:text-6xl font-bold text-graphite leading-none">
@@ -105,7 +105,7 @@ const Pride: React.FC = () => {
                   {item.value}
                 </span>
               </div>
-              {i < PRIDE_VALUES.length - 1 && (
+              {i < ARISE_VALUES.length - 1 && (
                 <div className="w-px h-10 bg-gray-200 hidden md:block" />
               )}
             </React.Fragment>
@@ -116,4 +116,4 @@ const Pride: React.FC = () => {
   );
 };
 
-export default Pride;
+export default Arise;

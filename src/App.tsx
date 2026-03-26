@@ -6,8 +6,8 @@ import Capabilities from './components/sections/Capabilities';
 import CCOModel from './components/sections/CCOModel';
 import Platform from './components/sections/Platform';
 import WhyCymonic from './components/sections/WhyCymonic';
-import Pride from './components/sections/Pride';
-import PrideBand from './components/sections/PrideBand';
+import Arise from './components/sections/Arise';
+import AriseBand from './components/sections/AriseBand';
 import TechPartners from './components/sections/TechPartners';
 import GlobalReach from './components/sections/GlobalReach';
 import CTABand from './components/sections/CTABand';
@@ -22,9 +22,9 @@ const App: React.FC = () => (
       <CCOModel />
       <Platform />
       <WhyCymonic />
-      <Pride />
+      <Arise />
       <GlobalReach />
-      <PrideBand />
+      <AriseBand />
       <CTABand />
     </main>
     <Footer />

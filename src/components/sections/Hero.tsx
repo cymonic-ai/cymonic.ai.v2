@@ -74,16 +74,16 @@ const Hero: React.FC = () => (
             <a href="mailto:contact@cymonic.ai" className="btn-outline">Get in Touch</a>
           </motion.div>
 
-          {/* PRIDE teaser */}
+          {/* ARISE teaser */}
           <motion.div initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{delay:0.9,duration:0.5}}
             className="mt-10 pt-8 border-t border-white/10">
             <p className="text-white/30 text-xs tracking-widest uppercase mb-3 font-medium">We live by</p>
             <div className="flex items-center gap-1">
               {[
-                {l:'P', v:'Passion'},
+                {l:'A', v:'Accountability'},
                 {l:'R', v:'Reliability'},
                 {l:'I', v:'Integrity'},
-                {l:'D', v:'Discipline'},
+                {l:'S', v:'Solidarity'},
                 {l:'E', v:'Excellence'},
               ].map(({l, v}, i) => (
                 <div key={l} className="flex items-center gap-1">

@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/cymonic.ai.v2/static/css/main.2990de2e.css",
-    "main.js": "/cymonic.ai.v2/static/js/main.744cb484.js",
+    "main.css": "/cymonic.ai.v2/static/css/main.36facd2f.css",
+    "main.js": "/cymonic.ai.v2/static/js/main.d0a5f6f3.js",
+    "static/media/world-outline.svg": "/cymonic.ai.v2/static/media/world-outline.b941b04825a584a48cdc28f5a237be14.svg",
     "index.html": "/cymonic.ai.v2/index.html",
-    "main.2990de2e.css.map": "/cymonic.ai.v2/static/css/main.2990de2e.css.map",
-    "main.744cb484.js.map": "/cymonic.ai.v2/static/js/main.744cb484.js.map"
+    "main.36facd2f.css.map": "/cymonic.ai.v2/static/css/main.36facd2f.css.map",
+    "main.d0a5f6f3.js.map": "/cymonic.ai.v2/static/js/main.d0a5f6f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2990de2e.css",
-    "static/js/main.744cb484.js"
+    "static/css/main.36facd2f.css",
+    "static/js/main.d0a5f6f3.js"
   ]
 }

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ARISE_VALUES } from '../../constants/content';
 
 const AriseBand: React.FC = () => (
-  <section className="py-16 bg-graphite overflow-hidden relative">
+  <section className="py-12 sm:py-14 md:py-16 bg-graphite overflow-hidden relative">
     <div className="absolute inset-0 hex-pattern opacity-30 pointer-events-none" />
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -17,7 +17,7 @@ const AriseBand: React.FC = () => (
           className="flex-shrink-0 text-center md:text-left"
         >
           <p className="text-emerald text-xs font-semibold tracking-widest uppercase mb-1">Our DNA</p>
-          <p className="font-display text-white text-2xl font-bold">We live by <span className="text-emerald">ARISE</span></p>
+          <p className="font-display text-white font-bold text-[clamp(1.4rem,3.5vw,1.75rem)]">We live by <span className="text-emerald">ARISE</span></p>
         </motion.div>
 
         {/* Divider */}
@@ -45,7 +45,7 @@ const AriseBand: React.FC = () => (
                 </span>
               </div>
               {i < ARISE_VALUES.length - 1 && (
-                <span className="text-white/15 text-lg font-light">·</span>
+                <span className="text-white/15 text-lg font-light hidden sm:inline">·</span>
               )}
             </motion.div>
           ))}

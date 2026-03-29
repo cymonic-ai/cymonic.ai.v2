@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 const HeroGraphic: React.FC = () => (
-  <svg viewBox="0 0 420 400" fill="none" className="w-full h-full max-w-lg">
+  <svg viewBox="0 0 420 400" fill="none" className="w-full h-auto max-w-[520px]">
     {[80,130,180,230].map((r,i) => (
       <polygon key={r}
         points={Array.from({length:6},(_,k)=>{const a=(Math.PI/3)*k-Math.PI/6;return `${210+r*Math.cos(a)},${200+r*Math.sin(a)}`;}).join(' ')}
@@ -44,41 +44,41 @@ const HeroGraphic: React.FC = () => (
 );
 
 const Hero: React.FC = () => (
-  <section id="home" className="relative min-h-screen bg-graphite hex-pattern flex items-center">
+  <section id="home" className="relative min-h-screen bg-graphite hex-pattern flex items-center overflow-hidden">
     <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-emerald/5 rounded-full blur-3xl pointer-events-none"/>
     <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-emerald/4 rounded-full blur-3xl pointer-events-none"/>
 
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 md:py-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <div>
+        <div className="min-w-0">
           <motion.h1 initial={{opacity:0,y:28}} animate={{opacity:1,y:0}}
             transition={{duration:0.7,delay:0.2,ease:[0.22,1,0.36,1]}}
-            className="font-display text-white text-4xl sm:text-5xl xl:text-6xl font-bold leading-snug mb-6 pb-1">
+            className="font-display text-white font-bold leading-[1.1] mb-6 pb-1 text-[clamp(2.35rem,6vw,4rem)]">
             Where Instinct<br/>
             <span className="text-emerald">Meets</span> Intelligence
           </motion.h1>
 
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.6,delay:0.35}}
-            className="text-white/55 text-base md:text-lg leading-relaxed mb-10 max-w-lg">
+            className="text-white/55 leading-relaxed mb-8 sm:mb-10 max-w-lg text-[clamp(1rem,2.4vw,1.125rem)]">
             High-fidelity AI engineering for the Agentic Era. We architect the cognitive engines and autonomous workflows that power the next generation of global enterprise transformation.
           </motion.p>
 
           <motion.div initial={{opacity:0,y:16}} animate={{opacity:1,y:0}} transition={{duration:0.5,delay:0.5}}
-            className="flex flex-wrap gap-4">
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full">
             <a href="#platform"
               onClick={e=>{e.preventDefault();document.querySelector('#platform')?.scrollIntoView({behavior:'smooth'});}}
-              className="btn-primary group">
+              className="btn-primary group w-full sm:w-auto justify-center">
               Explore Platform
               <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform"/>
             </a>
-            <a href="mailto:contact@cymonic.ai" className="btn-outline">Get in Touch</a>
+            <a href="mailto:contact@cymonic.ai" className="btn-outline w-full sm:w-auto justify-center">Get in Touch</a>
           </motion.div>
 
           {/* ARISE teaser */}
           <motion.div initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{delay:0.9,duration:0.5}}
             className="mt-10 pt-8 border-t border-white/10">
             <p className="text-white/30 text-xs tracking-widest uppercase mb-3 font-medium">We live by</p>
-            <div className="flex items-center gap-1">
+            <div className="flex flex-wrap items-center gap-2 justify-center sm:justify-start">
               {[
                 {l:'A', v:'Accountability'},
                 {l:'R', v:'Reliability'},
@@ -91,7 +91,7 @@ const Hero: React.FC = () => (
                     <span className="font-display text-xl font-bold text-white group-hover:text-emerald transition-colors">{l}</span>
                     <span className="text-white/35 text-xs font-medium">{v}</span>
                   </div>
-                  {i < 4 && <span className="text-white/15 text-xs">·</span>}
+                  {i < 4 && <span className="text-white/15 text-xs hidden sm:inline">·</span>}
                 </div>
               ))}
             </div>
@@ -101,7 +101,7 @@ const Hero: React.FC = () => (
 
         <motion.div initial={{opacity:0,scale:0.9}} animate={{opacity:1,scale:1}}
           transition={{duration:0.9,delay:0.3,ease:[0.22,1,0.36,1]}}
-          className="flex items-center justify-center h-72 lg:h-auto">
+          className="flex items-center justify-center h-64 sm:h-72 lg:h-auto">
           <HeroGraphic/>
         </motion.div>
       </div>

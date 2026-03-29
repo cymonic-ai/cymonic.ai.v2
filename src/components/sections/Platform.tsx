@@ -13,7 +13,7 @@ const iconMap: Record<string,React.ReactNode> = {
 const Platform: React.FC = () => {
   const [expanded, setExpanded] = useState<string|null>(null);
   return (
-    <section id="platform" className="py-24 md:py-32 bg-graphite">
+  <section id="platform" className="py-16 sm:py-20 md:py-28 lg:py-32 bg-graphite">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader label="Platform Ecosystem" title="Architecting the Autonomous Enterprise"
           subtitle="Five purpose-built engines that work together to give your organisation complete agentic intelligence — from execution to oversight."/>
@@ -41,7 +41,7 @@ const Platform: React.FC = () => {
                           ${isOpen?'rotate-180 text-emerald':'text-gray-400'}`}/>
                       </div>
                     </div>
-                    <h3 className={`font-display text-xl font-bold mb-1 transition-colors ${isOpen?'text-white':'text-graphite'}`}>
+                    <h3 className={`font-display font-bold mb-1 transition-colors text-[clamp(1.1rem,2.4vw,1.25rem)] ${isOpen?'text-white':'text-graphite'}`}>
                       {product.name}
                     </h3>
                     <p className={`text-sm font-medium transition-colors ${isOpen?'text-emerald':'text-emerald-dark'}`}>
@@ -76,7 +76,7 @@ const Platform: React.FC = () => {
                             p-6 md:p-7 flex flex-col justify-center items-center text-center min-h-[160px] h-full">
               <p className="font-display font-bold text-graphite text-lg mb-2">Ready to deploy your first Digital Worker?</p>
               <p className="text-gray-500 text-sm mb-5">Start with a 30-minute architecture session.</p>
-              <a href="mailto:contact@cymonic.ai" className="btn-primary text-xs px-5 py-2.5">Book a Session</a>
+              <a href="mailto:contact@cymonic.ai" className="btn-primary text-xs px-5 py-2.5 w-full sm:w-auto justify-center">Book a Session</a>
             </div>
           </FadeUp>
         </div>

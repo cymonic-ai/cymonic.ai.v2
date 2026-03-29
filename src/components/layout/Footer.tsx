@@ -47,7 +47,7 @@ const Footer: React.FC = () => (
           </div>
         ))}
       </div>
-      <div className="border-t border-white/8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="border-t border-white/8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
         <p className="text-white/25 text-xs">© 2026 Cymonic Technologies. All rights reserved.</p>
         <p className="text-white/25 text-xs">Kochi, Kerala, India · Architecting Autonomous Intelligence for Global Enterprises</p>
       </div>

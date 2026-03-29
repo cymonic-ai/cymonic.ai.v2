@@ -9,7 +9,7 @@ const CCOModel: React.FC = () => {
   const [active, setActive] = useState(0);
   const step = CCO_STEPS[active];
   return (
-    <section id="cco-model" className="py-24 md:py-32" style={{background:'#F9FAFB'}}>
+    <section id="cco-model" className="py-16 sm:py-20 md:py-28 lg:py-32" style={{background:'#F9FAFB'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader label="The CCO Engagement Model" title="A Framework Built for Agentic Maturity"
           subtitle="Three deliberate phases that take you from strategy to autonomous production — and keep you there." center/>
@@ -17,7 +17,7 @@ const CCOModel: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-3 mb-10 justify-center">
             {CCO_STEPS.map((s,i) => (
               <button key={s.title} onClick={() => setActive(i)}
-                className={`flex items-center gap-3 px-6 py-3.5 rounded-xl border transition-all duration-250 text-left sm:flex-col sm:items-center sm:px-8 sm:py-4
+                className={`flex items-center gap-3 px-6 py-3.5 rounded-xl border transition-all duration-250 text-left sm:flex-col sm:items-center sm:px-8 sm:py-4 w-full sm:w-auto
                   ${active===i ? 'bg-graphite border-emerald/30 text-white shadow-lg shadow-graphite/20'
                                : 'bg-white border-gray-200 text-gray-500 hover:border-emerald/30 hover:shadow-md'}`}>
                 <span className={`text-xs font-bold tracking-widest ${active===i?'text-emerald':'text-gray-400'}`}>{s.number}</span>
@@ -36,7 +36,7 @@ const CCOModel: React.FC = () => {
                   <span className="text-emerald text-xs font-bold">{step.number}</span>
                   <span className="text-emerald-dark text-xs font-semibold">{step.subtitle}</span>
                 </div>
-                <h3 className="font-display text-graphite text-3xl md:text-4xl font-bold mb-4">{step.title}</h3>
+                <h3 className="font-display text-graphite font-bold mb-4 text-[clamp(1.6rem,4.2vw,2.4rem)]">{step.title}</h3>
                 <p className="text-gray-500 leading-relaxed text-sm md:text-base">{step.description}</p>
                 <div className="flex items-center gap-2 mt-10">
                   {CCO_STEPS.map((_,i) => (

@@ -16,7 +16,7 @@ const fadeUp = (delay:number) => ({
 });
 
 const Capabilities: React.FC = () => (
-  <section id="capabilities" className="py-24 md:py-32 bg-graphite">
+  <section id="capabilities" className="py-16 sm:py-20 md:py-28 lg:py-32 bg-graphite">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeader
         label="Core Capabilities"
@@ -33,7 +33,7 @@ const Capabilities: React.FC = () => (
                 {iconMap[cap.icon]}
               </div>
               <div className="flex-1">
-                <h3 className="font-display text-graphite text-xl font-bold mb-1">{cap.title}</h3>
+                <h3 className="font-display text-graphite font-bold mb-1 text-[clamp(1.1rem,2.4vw,1.25rem)]">{cap.title}</h3>
                 <p className="text-emerald-dark text-xs font-semibold tracking-wide uppercase mb-3">{cap.subtitle}</p>
                 <p className="text-gray-500 text-sm leading-relaxed">{cap.description}</p>
               </div>
@@ -60,7 +60,7 @@ const Capabilities: React.FC = () => (
                 We immerse ourselves in your data, workflows, and language — so the intelligence we build fits exactly how you operate.
               </p>
             </div>
-            <a href="mailto:contact@cymonic.ai" className="btn-primary mt-6 self-start text-xs px-5 py-2.5">
+            <a href="mailto:contact@cymonic.ai" className="btn-primary mt-6 self-stretch sm:self-start text-xs px-5 py-2.5 justify-center w-full sm:w-auto">
               Start a Conversation
             </a>
           </div>

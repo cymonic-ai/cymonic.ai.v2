@@ -35,7 +35,7 @@ const Arise: React.FC = () => {
   const doubled = [...ARISE_VALUES, ...ARISE_VALUES];
 
   return (
-    <section id="values" className="py-24 md:py-32 bg-graphite overflow-hidden">
+    <section id="values" className="py-16 sm:py-20 md:py-28 lg:py-32 bg-graphite overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <SectionHeader
           label="Core Values"
@@ -51,20 +51,17 @@ const Arise: React.FC = () => {
         onMouseLeave={() => setIsPaused(false)}
       >
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to right, white, transparent)' }} />
-        <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to left, white, transparent)' }} />
+        <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-10 pointer-events-none bg-gradient-to-r from-graphite to-transparent" />
+        <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 z-10 pointer-events-none bg-gradient-to-l from-graphite to-transparent" />
 
         {/* Track */}
-        <div ref={trackRef} className="flex gap-5 w-max px-6">
+        <div ref={trackRef} className="flex gap-4 sm:gap-5 w-max px-4 sm:px-6">
           {doubled.map((item, i) => (
             <div
               key={i}
               className="group relative bg-white rounded-2xl border border-gray-100 p-7
                          hover:border-emerald/40 hover:shadow-xl hover:shadow-emerald/8
-                         transition-all duration-300 flex flex-col cursor-default"
-              style={{ width: '260px', flexShrink: 0 }}
+                         transition-all duration-300 flex flex-col cursor-default flex-shrink-0 w-[220px] sm:w-[240px] md:w-[260px]"
             >
               {/* Big letter */}
               <span className="font-display text-7xl font-bold leading-none select-none mb-3
@@ -92,21 +89,21 @@ const Arise: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-14"
       >
-        <div className="flex items-center justify-center gap-1 md:gap-0">
+        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-0 bg-white/5 border border-white/10 rounded-2xl px-4 sm:px-6 py-6">
           {ARISE_VALUES.map((item, i) => (
             <React.Fragment key={item.letter}>
               <div className="flex flex-col items-center px-4 md:px-8">
-                <span className="font-display text-4xl md:text-6xl font-bold text-graphite leading-none">
+                <span className="font-display font-bold text-white leading-none text-[clamp(2rem,7vw,3.75rem)]">
                   {item.letter}
                 </span>
-                <span className="text-xs text-gray-400 font-medium mt-2 tracking-widest uppercase">
+                <span className="text-[0.65rem] sm:text-xs text-white/60 font-medium mt-2 tracking-widest uppercase">
                   {item.value}
                 </span>
               </div>
               {i < ARISE_VALUES.length - 1 && (
-                <div className="w-px h-10 bg-gray-200 hidden md:block" />
+                <div className="w-px h-10 bg-white/15 hidden md:block" />
               )}
             </React.Fragment>
           ))}

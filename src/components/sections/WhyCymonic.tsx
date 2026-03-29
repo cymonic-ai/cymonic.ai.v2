@@ -4,7 +4,7 @@ import { FadeUp } from '../ui/FadeUp';
 import { WHY_CYMONIC } from '../../constants/content';
 
 const WhyCymonic: React.FC = () => (
-  <section id="why-cymonic" className="py-24 md:py-32" style={{background:'#F9FAFB'}}>
+  <section id="why-cymonic" className="py-16 sm:py-20 md:py-28 lg:py-32" style={{background:'#F9FAFB'}}>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div className="lg:sticky lg:top-28">

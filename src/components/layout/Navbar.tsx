@@ -73,7 +73,11 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-white/80 hover:text-emerald transition-colors p-1"
+        <button
+          className="md:hidden text-white/80 hover:text-emerald transition-colors p-1"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
+          aria-label="Toggle navigation menu"
           onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X size={22}/> : <Menu size={22}/>}
         </button>
@@ -81,7 +85,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-graphite border-t border-white/8 px-4 py-4 space-y-1 max-h-[80vh] overflow-y-auto">
+        <div id="mobile-menu" className="md:hidden bg-graphite border-t border-white/8 px-4 py-4 space-y-1 max-h-[80vh] overflow-y-auto">
           {NAV_ITEMS.map((item) => (
             <div key={item.label}>
               <button

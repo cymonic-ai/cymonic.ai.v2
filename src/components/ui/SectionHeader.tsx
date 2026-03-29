@@ -9,7 +9,7 @@ interface SectionHeaderProps {
 }
 
 export const SectionHeader: React.FC<SectionHeaderProps> = ({ label, title, subtitle, center = false }) => (
-  <div className={`mb-14 md:mb-20 ${center ? 'text-center' : ''}`}>
+  <div className={`mb-10 sm:mb-12 md:mb-16 ${center ? 'text-center' : ''}`}>
     <FadeUp>
       <span className="section-label">
         <span className="w-6 h-px bg-emerald inline-block" />

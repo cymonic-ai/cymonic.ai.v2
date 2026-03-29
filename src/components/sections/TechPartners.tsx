@@ -3,7 +3,7 @@ import { FadeUp } from '../ui/FadeUp';
 import { TECH_PARTNERS } from '../../constants/content';
 
 const TechPartners: React.FC = () => (
-  <section className="py-14 bg-white border-y border-gray-100">
+  <section className="py-12 sm:py-14 md:py-16 bg-white border-y border-gray-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <FadeUp>
         <p className="text-center text-xs font-semibold tracking-widest uppercase text-gray-400 mb-8">

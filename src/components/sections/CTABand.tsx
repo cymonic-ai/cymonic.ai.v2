@@ -3,7 +3,7 @@ import { ArrowRight, Mail } from 'lucide-react';
 import { FadeUp } from '../ui/FadeUp';
 
 const CTABand: React.FC = () => (
-  <section className="relative py-16 md:py-24 lg:py-32 bg-graphite-mid overflow-hidden" style={{background:'#1F2937'}}>
+  <section className="relative py-16 sm:py-20 md:py-24 lg:py-32 bg-graphite-mid overflow-hidden" style={{background:'#1F2937'}}>
     <div className="absolute inset-0 hex-pattern opacity-40 pointer-events-none"/>
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-32 md:w-96 md:h-48 lg:w-[500px] lg:h-[200px]
                     bg-emerald/8 rounded-full blur-3xl pointer-events-none"/>
@@ -15,13 +15,13 @@ const CTABand: React.FC = () => (
         </span>
       </FadeUp>
       <FadeUp delay={0.1}>
-        <h2 className="font-display text-white text-2xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 md:mb-6 pb-1">
+        <h2 className="font-display text-white font-bold leading-snug mb-4 md:mb-6 pb-1 text-[clamp(1.9rem,5vw,3.2rem)]">
           Ready to Architect Your<br/>
           <span className="text-emerald">Autonomous Enterprise?</span>
         </h2>
       </FadeUp>
       <FadeUp delay={0.2}>
-        <p className="text-white/50 text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-8 md:mb-10 leading-relaxed px-2">
+        <p className="text-white/50 max-w-xl mx-auto mb-8 md:mb-10 leading-relaxed px-2 text-[clamp(0.98rem,2.4vw,1.1rem)]">
           Whether you're a startup racing to ship or a global enterprise modernising at scale — we plug in as your senior AI engineering partner.
         </p>
       </FadeUp>

@@ -220,12 +220,12 @@ export const TECH_PARTNERS = [
 ];
 
 export const GLOBAL_CITIES = [
-  { name: 'New York', x: 13, y: 18, hq: false },
-  { name: 'Toronto', x: 11, y: 15, hq: false },
-  { name: 'Dubai', x: 52, y: 30, hq: false },
-  { name: 'Kochi', x: 61, y: 37, hq: true },
-  { name: 'Singapore', x: 70, y: 44, hq: false },
-  { name: 'Sydney', x: 82, y: 62, hq: false },
+  { name: 'New York', x: 31.0, y: 26.5, hq: false },
+  { name: 'Toronto', x: 29.8, y: 24.5, hq: false },
+  { name: 'Dubai', x: 64.8, y: 35.5, hq: false },
+  { name: 'Kochi', x: 71.0, y: 46.5, hq: true },
+  { name: 'Singapore', x: 78.5, y: 51.5, hq: false },
+  { name: 'Sydney', x: 90.5, y: 73.0, hq: false },
 ];
 
 export const ARISE_VALUES = [

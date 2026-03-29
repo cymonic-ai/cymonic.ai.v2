@@ -15,7 +15,7 @@ import CTABand from './components/sections/CTABand';
 const App: React.FC = () => (
   <>
     <Navbar />
-    <main className="pt-16">
+    <main className="pt-16 overflow-x-hidden">
       <Hero />
       <TechPartners />
       <Capabilities />

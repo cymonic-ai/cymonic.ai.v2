@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FadeUp } from '../ui/FadeUp';
 import { GLOBAL_CITIES } from '../../constants/content';
+import worldMapUrl from '../../assets/world-outline.svg';
 
 const GlobalReach: React.FC = () => {
   const [activeCity, setActiveCity] = useState<string|null>(null);
@@ -15,7 +16,7 @@ const GlobalReach: React.FC = () => {
   };
 
   return (
-    <section className="py-6 md:py-8 lg:py-10 bg-graphite overflow-hidden relative">
+    <section className="py-10 sm:py-12 md:py-14 bg-graphite overflow-hidden relative">
       <div className="absolute inset-0 hex-pattern opacity-50 pointer-events-none"/>
       {/* Responsive background blur */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 md:w-[400px] md:h-[250px] lg:w-[600px] lg:h-[300px] bg-emerald/5 rounded-full blur-3xl pointer-events-none"/>
@@ -29,7 +30,7 @@ const GlobalReach: React.FC = () => {
             </span>
           </FadeUp>
           <FadeUp delay={0.1}>
-            <h2 className="font-display text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-1 mb-1 md:mb-2">
+            <h2 className="font-display text-white font-bold mt-1 mb-1 md:mb-2 text-[clamp(1.6rem,4.2vw,2.4rem)]">
               One Engineering Base. <span className="text-emerald">Six Global Markets.</span>
             </h2>
           </FadeUp>
@@ -41,47 +42,10 @@ const GlobalReach: React.FC = () => {
         </div>
 
         <FadeUp delay={0.3}>
-          <div className="relative w-full max-w-4xl mx-auto bg-graphite/50 rounded-lg overflow-hidden">
+          <div className="relative w-full max-w-5xl mx-auto bg-graphite/50 rounded-lg overflow-hidden">
             {/* SVG Map Container with responsive aspect ratio */}
-            <div className="w-full" style={{ aspectRatio: '16/9', minHeight: '280px' }}>
-              <svg viewBox="0 0 1000 550" className="w-full h-full opacity-25" fill="none" preserveAspectRatio="xMidYMid meet">
-                {/* North America */}
-                <path d="M50 80L100 70L120 100L140 130L130 160L110 170L80 150L60 110Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                {/* Central America & Caribbean */}
-                <path d="M120 180L135 185L140 200L130 210L120 205Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.4"/>
-                {/* South America */}
-                <path d="M110 220L140 210L155 240L160 290L150 340L130 360L100 340L95 280L105 240Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* Europe */}
-                <path d="M350 60L400 55L420 75L410 100L370 110L350 90Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                {/* Africa */}
-                <path d="M390 110L450 100L480 120L490 180L500 250L480 300L450 310L420 280L410 200L400 150L390 120Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* Middle East */}
-                <path d="M480 130L520 125L540 160L530 200L500 190L490 150Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* Russia & Central Asia */}
-                <path d="M480 70L600 60L650 80L660 120L620 130L550 110L500 100Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* South Asia */}
-                <path d="M590 160L630 155L650 180L640 210L610 220L595 200Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* Southeast Asia */}
-                <path d="M650 190L700 185L720 220L710 250L670 245L655 210Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* East Asia */}
-                <path d="M700 70L800 65L820 100L800 140L750 135L720 100Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* Australia */}
-                <path d="M780 280L820 275L840 310L820 340L780 335Z" stroke="#10B981" strokeWidth="1.5" fill="#1F2937" fillOpacity="0.6"/>
-                
-                {/* New Zealand */}
-                <path d="M860 330L875 325L880 355L865 360Z" stroke="#10B981" strokeWidth="1" fill="#1F2937" fillOpacity="0.4"/>
-                
-                {/* Grid lines */}
-                {[100,150,200,250,300,350,400,450,500].map(y=><line key={`h${y}`} x1="0" y1={y} x2="1000" y2={y} stroke="#10B981" strokeOpacity="0.03" strokeWidth="1"/>)}
-                {[100,200,300,400,500,600,700,800,900].map(x=><line key={`v${x}`} x1={x} y1="0" x2={x} y2="550" stroke="#10B981" strokeOpacity="0.03" strokeWidth="1"/>)}
-              </svg>
+            <div className="w-full aspect-[2000/857] min-h-[220px] sm:min-h-[260px] md:min-h-[300px] flex items-center justify-center">
+              <img src={worldMapUrl} alt="" className="w-full h-full object-contain opacity-70" aria-hidden="true" />
             </div>
 
             {/* City markers overlay */}
@@ -98,10 +62,9 @@ const GlobalReach: React.FC = () => {
                 >
                   {city.hq && (
                     <motion.div
-                      className="absolute rounded-full border-2 border-emerald"
+                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-2 border-emerald pointer-events-none"
                       animate={{scale:[1,2.5],opacity:[0.6,0]}}
                       transition={{repeat:Infinity,duration:2,ease:'easeOut'}}
-                      style={{width:16,height:16,top:-8,left:-8}}
                     />
                   )}
                   
@@ -111,7 +74,7 @@ const GlobalReach: React.FC = () => {
                     onMouseEnter={() => setHoveredCity(city.name)}
                     onMouseLeave={() => setHoveredCity(null)}
                     className={`rounded-full transition-all duration-200 relative z-20
-                      ${city.hq?'w-5 h-5 md:w-3.5 md:h-3.5 bg-emerald shadow-lg shadow-emerald/50':'w-4 h-4 md:w-2.5 md:h-2.5 bg-emerald/55 hover:bg-emerald'}
+                      ${city.hq?'w-4 h-4 bg-emerald shadow-lg shadow-emerald/50':'w-3 h-3 bg-emerald/55 hover:bg-emerald'}
                       ${displayedCity === city.name ? 'ring-2 ring-emerald ring-offset-2' : ''}`}
                     aria-label={`Location: ${city.name}${city.hq ? ' (Headquarters)' : ''}`}
                   />

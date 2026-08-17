@@ -31,13 +31,9 @@ const Navbar: React.FC = () => {
 
         {/* Logo */}
         <button onClick={() => navTo('#home')} className="flex items-center gap-2.5 flex-shrink-0">
-          <svg width="32" height="32" viewBox="0 0 34 34" fill="none">
-            <polygon points="17,2 30,9.5 30,24.5 17,32 4,24.5 4,9.5" fill="none" stroke="#10B981" strokeWidth="1.5"/>
-            <polygon points="17,8 25,12.5 25,21.5 17,26 9,21.5 9,12.5" fill="#10B981" fillOpacity="0.15" stroke="#10B981" strokeWidth="1"/>
-            <circle cx="17" cy="17" r="3" fill="#10B981"/>
-          </svg>
+          <img src="/cy-192x192.png" alt="Cymonic technologies logo" className="h-8 w-8" />
           <span className="font-display text-white text-lg font-bold tracking-tight">
-            CYMONIC<span className="text-emerald">.</span>
+            CYMONIC TECHNOLOGIES<span className="text-emerald">.</span>
           </span>
         </button>
 

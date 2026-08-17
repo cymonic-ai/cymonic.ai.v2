@@ -13,12 +13,8 @@ const Footer: React.FC = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <div className="lg:col-span-1">
           <div className="flex items-center gap-2.5 mb-4">
-            <svg width="30" height="30" viewBox="0 0 34 34" fill="none">
-              <polygon points="17,2 30,9.5 30,24.5 17,32 4,24.5 4,9.5" fill="none" stroke="#10B981" strokeWidth="1.5"/>
-              <polygon points="17,8 25,12.5 25,21.5 17,26 9,21.5 9,12.5" fill="#10B981" fillOpacity="0.15" stroke="#10B981" strokeWidth="1"/>
-              <circle cx="17" cy="17" r="3" fill="#10B981"/>
-            </svg>
-            <span className="font-display text-white text-lg font-bold">CYMONIC<span className="text-emerald">.</span></span>
+            <img src="/cy-192x192.png" alt="Cymonic technologies logo" className="h-[50px] w-[50px]" />
+            <span className="font-display text-white text-lg font-bold">CYMONIC TECHNOLOGIES<span className="text-emerald">.</span></span>
           </div>
           <p className="text-white/40 text-sm leading-relaxed mb-5 italic">Instinct Meets Intelligence</p>
           <div className="space-y-2">

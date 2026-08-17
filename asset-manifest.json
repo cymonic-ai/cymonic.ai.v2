@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cymonic.ai.v2/static/css/main.36facd2f.css",
-    "main.js": "/cymonic.ai.v2/static/js/main.d0a5f6f3.js",
-    "static/media/world-outline.svg": "/cymonic.ai.v2/static/media/world-outline.b941b04825a584a48cdc28f5a237be14.svg",
-    "index.html": "/cymonic.ai.v2/index.html",
-    "main.36facd2f.css.map": "/cymonic.ai.v2/static/css/main.36facd2f.css.map",
-    "main.d0a5f6f3.js.map": "/cymonic.ai.v2/static/js/main.d0a5f6f3.js.map"
+    "main.css": "./static/css/main.4ba74266.css",
+    "main.js": "./static/js/main.43908a19.js",
+    "static/media/world-outline.svg": "./static/media/world-outline.6a12d8eea850c5932ede213c32d4a695.svg",
+    "index.html": "./index.html",
+    "main.4ba74266.css.map": "./static/css/main.4ba74266.css.map",
+    "main.43908a19.js.map": "./static/js/main.43908a19.js.map"
   },
   "entrypoints": [
-    "static/css/main.36facd2f.css",
-    "static/js/main.d0a5f6f3.js"
+    "static/css/main.4ba74266.css",
+    "static/js/main.43908a19.js"
   ]
 }
